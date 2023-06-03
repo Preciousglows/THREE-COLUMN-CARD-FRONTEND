@@ -1,0 +1,135 @@
+:root {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+}
+
+button {
+  background-color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  border-radius: 1em;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+
+  width: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 100%;
+}
+
+img {
+  max-width: 20%;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  flex-direction: column;
+  padding: 2em;
+  border-bottom-left-radius: 2%;
+  border-top-left-radius: 2%;
+}
+
+.sedan button{
+    margin-top: auto;
+    color: hsl(31, 77%, 52%);
+}
+
+.sedan button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  flex-direction: column;
+  padding: 2em;
+}
+
+.suv button{
+    margin-top: auto;
+    color: hsl(184, 100%, 22%);
+}
+
+.suv button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  flex-direction: column;
+  padding: 2em;
+  border-bottom-right-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.luxury button{
+    margin-top: auto;
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width:375px) {
+    main {
+        flex-direction: column;
+      }
+
+    .container{
+        flex-direction: column;
+        width: 90vh;
+    }
+
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .sedan{
+        width: 60vh;
+        align-self: center;
+        margin: auto;
+    }
+
+    .suv{
+        width: 60vh;
+        align-self: center;
+        margin: auto;
+    }
+    .luxury{
+        width: 60vh;
+        align-self: center;
+        margin: auto;
+    }
+}
